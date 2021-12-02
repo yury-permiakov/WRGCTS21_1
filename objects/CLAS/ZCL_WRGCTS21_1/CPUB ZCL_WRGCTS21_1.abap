@@ -4,3 +4,5 @@ class ZCL_WRGCTS21_1 definition
   create public .
 
 public section.
+
+  methods SELECT .
