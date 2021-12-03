@@ -36,6 +36,23 @@ pipeline{
                     }                    
                 }
         }
+        stage ('Run ATC Checks')
+        {
+            steps
+            {
+                script
+                {
+                    try
+                    {
+                        abapEnvironmentRunATCCheck script: this
+                    } catch
+                    {
+                        unstable('ATC check failed')
+                        checks_failed = true
+                    }
+                }
+            }
+        }
         stage('Rollback Commit')
         {
             when { expression { checks_failed == true } } 
