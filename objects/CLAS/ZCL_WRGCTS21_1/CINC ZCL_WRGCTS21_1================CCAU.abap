@@ -22,7 +22,7 @@ class ltc_Wrgcts21_1 implementation.
 
     cl_Abap_Unit_Assert=>assert_Equals(
       act   = f_cut->sum( 3 )
-      exp   = 7         "<--- please adapt expected value
+      exp   = 6         "<--- please adapt expected value
       msg   = 'Testing failed'
 *     level =
     ).
