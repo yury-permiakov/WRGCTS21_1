@@ -29,7 +29,7 @@ pipeline{
         {
                 steps
                 {
-                    Rollback script: this
+                    gctsRollback script: this
                 }
         }         
     }    
