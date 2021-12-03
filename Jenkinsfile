@@ -45,7 +45,7 @@ pipeline{
                     try
                     {
                         abapEnvironmentRunATCCheck script: this
-                    } catch
+                    } catch (err)
                     {
                         unstable('ATC check failed')
                         checks_failed = true
