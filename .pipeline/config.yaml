@@ -8,7 +8,7 @@ steps:
     abapCredentialsId: 'W11'
     repository: 'yury-permiakov-wrgcts21_1'
   gctsExecuteABAPUnitTests:
-    host: 'http://gprd.sapds.ru:44300'
+    host: 'https://gprd.sapds.ru:44300'
     client: '500'
     abapCredentialsId: 'W11'
     repository: 'yury-permiakov-wrgcts21_1'
