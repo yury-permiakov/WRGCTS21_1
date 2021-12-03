@@ -6,4 +6,4 @@ steps:
     host: 'https://gprd.sapds.ru:8000'
     client: '500'
     abapCredentialsID: 'W11'
-    repository: 'github_WRGCTS21_1'
+    repository: 'yury-permiakov-wrgcts21_1'
