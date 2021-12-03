@@ -45,6 +45,8 @@ pipeline{
                     try
                     {
                         abapEnvironmentRunATCCheck script: this
+                        def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
+                        publishIssues issues: [checkStyle], failedTotalAll: 1
                     } catch (err)
                     {
                         def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
