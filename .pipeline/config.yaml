@@ -15,7 +15,7 @@ steps:
   gctsRollback:
     host: 'https://gprd.sapds.ru:44300'
     client: '500'
-    abapCredentialsId: 'WRGCTS21_0'
+    abapCredentialsId: 'W11'
     repository: 'yury-permiakov-wrgcts21_1'    
   abapEnvironmentRunATCCheck:
     abapCredentialsId: 'WRGCTS21_0'
