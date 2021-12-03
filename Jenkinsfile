@@ -5,8 +5,7 @@ pipeline{
     stages{
         stage ('Setup') {
         steps        {
-            setupCommonPipelineEnvironment
-                script: this            
+            setupCommonPipelineEnvironment script: this            
         }
     }    
     }    
