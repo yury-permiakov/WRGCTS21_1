@@ -42,18 +42,23 @@ pipeline{
             {
                 script
                 {
-                    try
-                    {
+                    //try
+                    //{
                         abapEnvironmentRunATCCheck script: this
                         def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
                         publishIssues issues: [checkStyle], failedTotalAll: 1
-                    } catch (err)
+                    if ( currentBuild.result == 'FAILURE' )
                     {
-                        def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
-                        publishIssues issues: [checkStyle], failedTotalAll: 1
-                        unstable('ATC check failed')
+                        echo 'ATC failed'
                         checks_failed = true
                     }
+//                    } catch (err)//
+                    //{
+                     //   def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
+                      //  publishIssues issues: [checkStyle], failedTotalAll: 1
+                       // unstable('ATC check failed')
+                       // checks_failed = true
+                   // }
                 }
             }
         }
