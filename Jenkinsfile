@@ -43,6 +43,14 @@ pipeline{
                 {
                     gctsRollback script: this
                 }
-        }                
+        } 
+        stage('Success build')
+        {
+            when { expression { checks_failed == false } }
+                steps
+                {
+                    echo 'Build success!'
+                }
+        }
     }    
 }
