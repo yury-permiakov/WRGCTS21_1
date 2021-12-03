@@ -9,7 +9,9 @@ pipeline{
             }
             stage('Deploy Commit')
             {
-                gctsDeploy script: this
+                steps{
+                    gctsDeploy script: this
+                }
             }            
     }    
     }    
