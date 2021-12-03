@@ -1,3 +1,9 @@
 general:
   collectTelemetryData: false
   verbose: true
+steps:
+  gctsDeploy:
+    host: 'https://gprd.sapds.ru:44300'
+    client: '500'
+    abapCredentialsID: 'W11'
+    repository: 'github_WRGCTS21_1'
