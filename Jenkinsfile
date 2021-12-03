@@ -44,12 +44,12 @@ pipeline{
                 {
                     try 
                     {
-                  //  abapEnvironmentRunATCCheck script: this
+                    abapEnvironmentRunATCCheck script: this
                   //  def checkStyle = scanForIssues tool: checkStyle(pattern: 'ATCResults.xml')
                   //  publishIssues issues: [checkStyle], failedTotalAll: 1
                    // if ( currentBuild.result == 'FAILURE' )
                  //   {
-                        echo 'ATC failed'
+                  //      echo 'ATC failed'
                //         checks_failed = true
                //     }
                     } catch (err)
