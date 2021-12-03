@@ -66,7 +66,7 @@ pipeline{
             when { expression { checks_failed == false } }
                 steps
                 {
-                    echo 'Build success!'
+                    echo 'Build success!1'
                 }
         }
     }    
