@@ -17,8 +17,8 @@ steps:
     client: '500'
     abapCredentialsId: 'W11'
     repository: 'yury-permiakov-wrgcts21_1'    
- abapEnvironmentRunATCCheck:
-  abapCredentialsId: 'W11'
-  host: 'gprd.sapds.ru:44300'
-  atcConfig: 'atcconfig.yml'
-  dockerPullImage: false
+  abapEnvironmentRunATCCheck:
+   abapCredentialsId: 'W11'
+   host: 'gprd.sapds.ru:44300'
+   atcConfig: 'atcconfig.yml'
+   dockerPullImage: false
