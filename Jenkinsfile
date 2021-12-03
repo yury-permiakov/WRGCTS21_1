@@ -9,6 +9,5 @@ pipeline{
                 script: this            
         }
     }    
-    }
-    
+    }    
 }
